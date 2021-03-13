@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@black: #383838;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	list-style-type: none;
+	box-sizing: border-box;
+	outline: none;
+}
+body {
+	background-color: #F2F8FF;
+	color: @black;
+}
+a {
+	color: #1273AD;
+	text-decoration: none;
+}
+.container {
+	max-width: 1310px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.btn {
+	font-weight: 600;
+	font-size: 14px;
+	padding: 13px 16px;
+	background-color: #1B89CB;
+	display: inline-block;
+	color: white;
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	box-shadow: 0px 4px 20px rgba(18, 115, 173, 0.5);
+	border-radius: 2px;
+	position: relative;
+	border: none;
+	cursor: pointer;
+	&.red {
+		background-color: #DF0B0B;
+		box-shadow: 0px 10px 20px rgba(255, 0, 0, 0.2);
+		.btn__item {
+			background-color: #FF0A0A;
+		}
+	}
+	&.yellow {
+		background-color: #FFD500;
+		box-shadow: 0px 10px 20px rgba(255, 213, 0, 0.2);
+		color: #383838;
+		.btn__item {
+			background-color: #E1BE0B;
+		}
+	}
+	img {
+		margin-left: 10px;
+	}
+}
+.btn__items {
+	transition: 0.2s;
+	position: absolute;
+	width: 100%;
+	top: -5px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: space-around;
+}
+.btn__item {
+	height: 5px;
+	width: 15px;
+	background-color: #1273AD;
+	border-radius: 1px 1px 0 0;
+}
+a.btn {
+	color: white;
+}
+//================ sec-title ===============//
+.sec-title {
+	font-weight: bold;
+	font-size: 36px;
+	position: relative;
+}
+.sec-title__icon {
+	position: absolute;
+	left: -33px;
+    top: -15px;
+	width: 58px;
+	height: 58px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+@media screen and (max-width: 800px) {
+	.sec-title {
+		font-size: 30px;
+	}
+	.sec-title__icon {
+		width: 42px;
+		height: 42px;
+		left: -25px;
+		top: -10px;
+	}
+}
+//================END sec-title ===============//
+//================ sec-desc ===============//
+.sec-desc {
+	font-weight: normal;
+	font-size: 16px;
+	margin-top: 13px;
+}
+@media screen and (max-width: 800px) {
+	.sec-desc {
+		font-size: 12px;
+	}
+}
+//================END sec-desc ===============//
+//================ input ===============//
+input {
+	padding: 12px 16px;
+	background: #F5F5F5;
+	border-radius: 5px;
+	border: none;
+	font-size: 14px;
+}
+//================END input ===============//
+
+@import 'sections/_header.less';
+@import 'sections/_hero.less';
+@import 'sections/_new.less';
+@import 'sections/_about.less';
+@import 'sections/_top.less';
+@import 'sections/_dop.less';
+@import 'sections/_assort.less';
+@import 'sections/_formblock.less';
+@import 'sections/_videoblock.less';
+@import 'sections/_ready.less';
+@import 'sections/_olimp.less';
+@import 'sections/_reviews.less';
+@import 'sections/_about-company.less';
+@import 'sections/_contacts.less';
+@import 'sections/_footer.less';

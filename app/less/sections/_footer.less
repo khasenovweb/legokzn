@@ -1,0 +1,117 @@
+.footer__top {
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(56, 56, 56, 0.1);
+}
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__logo {
+    display: flex;
+    align-items: center;
+}
+.footer__logo__img {
+    line-height: 0;
+    img {
+        max-height: 30px;
+        width: auto;
+    }
+}
+.footer__logo__desc {
+    font-size: 12px;
+    margin-left: 37px;
+    font-weight: normal;
+    * {
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .blue {
+        color: #1786C9;
+        font-weight: 600;
+    }
+}
+.footer__nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    a {
+        padding: 23px;
+        color: #383838;
+        font-size: 14px;
+    }
+}
+.footer__contacts {
+    display: flex;
+    align-items: center;
+}
+.footer__contacts__email {
+    font-weight: 600;
+    font-size: 18px;
+}
+.footer__contacts__phone {
+    font-weight: bold;
+    font-size: 22px;
+    color: #383838;
+    margin-left: 45px;
+}
+.footer__contacts__phonebtn {
+    background-color: #1588CB;
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 27px;
+}
+.footer__bottom {
+    padding: 12px 0 37px 0;
+}
+.footer__politics {
+    font-weight: 600;
+    font-size: 12px;
+    color: #C4C4C4;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .footer__content {
+        flex-direction: column;
+    }
+    .footer__nav {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    .footer__logo {
+        flex-direction: column;
+    }
+    .footer__logo__desc {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .footer__nav {
+        flex-direction: column;
+        li {
+            margin: 5px 0;
+        }
+    }
+    .footer__contacts {
+        flex-direction: column;
+    }
+    .footer__contacts__phone {
+        margin-left: 0;
+        margin: 10px 0;
+    }
+    .footer__contacts__phonebtn {
+        margin-left: 0;
+    }
+    .footer__politics {
+        display: block;
+        text-align: center;
+    }
+}

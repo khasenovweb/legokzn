@@ -1,0 +1,124 @@
+.ready {
+    background-color: #fff;
+    padding: 70px 0;
+}
+.ready__content {
+    .sec-title {
+        text-align: center;
+    }
+}
+.ready__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 80px;
+}
+.ready__item {
+    padding: 34px 26px;
+    border-radius: 10px;
+    position: relative;
+    &.yellow {
+        background-color: #FFD500;
+        .ready__item__fastener {
+            background-color: #E1BE0B;;
+        }
+    }
+    &.blue {
+        background-color: #1B89CB;
+        .ready__item__fastener {
+            background-color: #1273AD;
+        }
+        .ready__item__title, .ready__item__stock, .ready__item__list, .ready__item__price {
+            color: white;
+        }
+    }
+    &.red {
+        background-color: #F11515;
+        .ready__item__fastener {
+            background-color: #DF0B0B;
+        }
+        .ready__item__title, .ready__item__stock, .ready__item__list, .ready__item__price {
+            color: white;
+        }
+    }
+    &.green {
+        background-color: #30AF3D;
+        .ready__item__fastener {
+            background-color: #2C9837;
+        }
+        .ready__item__title, .ready__item__stock, .ready__item__list, .ready__item__price {
+            color: white;
+        }
+    }
+    .btn {
+        margin-top: 25px;
+    }
+}
+.ready__item__fasteners {
+    position: absolute;
+    top: -14px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.ready__item__fastener {
+    width: 90px;
+    height: 14px;
+    border-radius: 1px;
+}
+.ready__item__title {
+    font-weight: bold;
+    font-size: 36px;
+}
+.ready__item__list {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(max-content,0));
+    grid-gap: 5px;
+}
+.ready__item__stock {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.ready__item__prices {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(max-content,0));
+    grid-gap: 16px;
+    margin-top: 10px;
+}
+.ready__item__price {
+    font-weight: bold;
+    font-size: 24px;
+    &.old {
+        text-decoration-line: line-through;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .ready {
+        padding: 40px 0;
+    }
+    .ready__items {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+    .ready__item__title {
+        font-size: 24px;
+    }
+    .ready__item__list {
+        li {
+            font-size: 14px;
+        }
+        
+    }
+    .ready__item__stock {
+        font-size: 14px;
+    }
+    .ready__item__price {
+        font-size: 18px;
+    }
+}

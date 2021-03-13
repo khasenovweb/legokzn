@@ -1,0 +1,107 @@
+.about {
+    padding: 70px 0 35px 0;
+    background-image: url(../img/about-bg.svg);
+    .sec-title {
+        margin-top: 33px;
+        text-align: center;
+    }
+}
+.about__info {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    grid-gap: 30px;
+    align-items: center;
+    position: relative;
+}
+.about__info__fasteners {
+    position: absolute;
+    top: -11px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.about__info__fastener {
+    width: 117px;
+    height: 11px;
+    background-color: #E6EBF2;
+}
+.about__info__img {
+    width: 100%;
+    padding-bottom: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.about__info__title {
+    font-weight: bold;
+    font-size: 30px;
+}
+.about__info__desc {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    margin-top: 10px;
+}
+.about__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 30px;
+}
+.about__item {
+    padding: 0 40px;
+}
+.about__item__img {
+    background-repeat: no-repeat;
+    background-position: center;
+    // background-size: contain;
+    width: 100%;
+    padding-bottom: 50%;
+}
+.about__item__title {
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+    .about__item {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about__info {
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+    }
+    .about__info__title {
+        font-size: 30px;
+        text-align: center;
+        line-height: 120%;
+    }
+    .about__info__desc {
+        font-size: 14px;
+        line-height: 140%;
+    }
+    .about {
+        padding-top: 60px;
+    }
+    .about__items {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .about__item__title {
+        font-size: 12px;
+        line-height: 140%;
+    }
+    .about__item__img {
+        background-size: contain;
+    }
+}

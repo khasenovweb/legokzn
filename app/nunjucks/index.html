@@ -1,0 +1,586 @@
+{% set title = 'Главная' %}
+
+{% extends 'layouts/_main.html' %}
+
+{% block content %}
+<!-- ============================= hero =================================== -->
+<section class="hero">
+    <div class="container">
+        <div class="hero__content">
+            <div class="hero__text">
+                <h1 class="hero__title">Lego Education</h1>
+                <p class="hero__title-after">от официального дилера</p>
+                <p class="hero__desc">Хотите вывести свое учебное учреждение на новый уровень? Прямо сейчас узнайте как:</p>
+                <a href="" class="btn">
+                    <div class="btn__items"></div>
+                    Скачать прайс-лист
+                    <img src="img/btn-doc.svg" alt="">
+                </a>
+            </div>
+            <div class="hero__items">
+                <div class="hero__item">
+                    <div class="hero__item__img" style="background-image: url(img/hero-item-1.png);"></div>
+                    <div class="hero__item__title">LEGO MINDSTORMS EV3</div>
+                    <button class="btn red">
+                        <div class="btn__items"></div>
+                        Заказать сейчас
+                    </button>
+                </div>
+                <div class="hero__item">
+                    <div class="hero__item__img" style="background-image: url(img/hero-item-2.png);"></div>
+                    <div class="hero__item__title">LEGO MINDSTORMS EV3</div>
+                    <button class="btn yellow">
+                        <div class="btn__items"></div>
+                        Заказать сейчас
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =============================END hero =================================== -->
+<!-- ============================= new =================================== -->
+<section class="new">
+    <div class="container">
+        <div class="new__content">
+            <div class="new__content__titlewrapper">
+                <h2 class="sec-title">
+                    <div class="sec-title__icon" style="background-image: url(img/new.svg);"></div>
+                    Новинки
+                </h2>
+            </div>
+            <div class="new__items">
+                <div class="new__item">
+                    <div class="new__item__fasteners"></div>
+                    <div class="new__item__img" style="background-image: url(img/new-item-1.png);"></div>
+                    <div class="new__item__text">
+                        <div class="new__item__title">LEGO® Education SPIKE™ Prime.</div>
+                        <button class="btn">
+                            <div class="btn__items"></div>
+                            Заказать сейчас
+                        </button>
+                    </div>
+                </div>
+                <div class="new__item">
+                    <div class="new__item__fasteners"></div>
+                    <div class="new__item__img" style="background-image: url(img/new-item-1.png);"></div>
+                    <div class="new__item__text">
+                        <div class="new__item__title">LEGO® BricQ Motion</div>
+                        <button class="btn red">
+                            <div class="btn__items"></div>
+                            Заказать сейчас
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =============================END new =================================== -->
+<!-- ============================= about =================================== -->
+<section class="about">
+    <div class="container">
+        <div class="about__info">
+            <div class="about__info__fasteners"></div>
+            <div class="about__info__img" style="background-image: url(img/about.png);"></div>
+            <div class="about__info__text">
+                <div class="about__info__title">Что такое Lego Education?</div>
+                <div class="about__info__desc">Уникальные образовательные решения которые способствуют всестороннему развитию детей используя иновационные технологиии в повседневном учебном процессе.</div>
+            </div>
+        </div>
+        <h2 class="sec-title">О Нас</h2>
+        <div class="about__items">
+            <div class="about__item">
+                <div class="about__item__img" style="background-image: url(img/about-item-1.png);"></div>
+                <div class="about__item__title">Официальный дилер Lego Education</div>
+            </div>
+            <div class="about__item">
+                <div class="about__item__img" style="background-image: url(img/about-item-2.png);"></div>
+                <div class="about__item__title">Официальный дилер Lego Education</div>
+            </div>
+            <div class="about__item">
+                <div class="about__item__img" style="background-image: url(img/about-item-3.png);"></div>
+                <div class="about__item__title">Официальный дилер Lego Education</div>
+            </div>
+            <div class="about__item">
+                <div class="about__item__img" style="background-image: url(img/about-item-4.png);"></div>
+                <div class="about__item__title">Официальный дилер Lego Education</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =============================END about =================================== -->
+<!-- ============================= top =================================== -->
+<section class="top" id="top">
+    <div class="container">
+        <div class="top__content">
+            <div class="top__content__titlewrapper">
+                <h2 class="sec-title">
+                    <div class="sec-title__icon" style="background-image: url(img/top.svg);"></div>
+                    Популярные товары
+                </h2>
+            </div>
+            <div class="top__items">
+                {% for i in range(0, 10) -%}
+                    <div class="top__item">
+                        <div class="top__item__img" style="background-image: url(img/top-item-1.png);"></div>
+                        <div class="top__item__title">45400 Набор LEGO Education BricQ Motion Prime</div>
+                    </div>
+                {%- endfor %}
+            </div>
+            <div class="top__content__btnwrapper">
+                <button class="btn">
+                    <div class="btn__items"></div>
+                    Показать больше товаров
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =============================END top =================================== -->
+<!-- ============================= dop =================================== -->
+<section class="dop">
+    <div class="container">
+        <div class="dop__content">
+            <h2 class="sec-title">Дополнительное оборудование</h2>
+            <p class="sec-desc">Так же вместе с конструкторами вы можете у нас приобрести</p>
+            <div class="dop__items">
+                <div class="dop__item">
+                    <div class="dop__item__img" style="background-image: url(img/dop-item-1.png);"></div>
+                    <div class="dop__item__title">Стол для проведения занятий по </div>
+                    <button class="btn">
+                        <div class="btn__items"></div>
+                        Зказать сейчас
+                    </button>
+                </div>
+                <div class="dop__item">
+                    <div class="dop__item__img" style="background-image: url(img/dop-item-1.png);"></div>
+                    <div class="dop__item__title">Система хранения
+                        комплектов Лего</div>
+                    <button class="btn yellow">
+                        <div class="btn__items"></div>
+                        Зказать сейчас
+                    </button>
+                </div>
+                <div class="dop__item">
+                    <div class="dop__item__img" style="background-image: url(img/dop-item-1.png);"></div>
+                    <div class="dop__item__title">Тумба передвижная для хранения комплектов Лего</div>
+                    <button class="btn red">
+                        <div class="btn__items"></div>
+                        Зказать сейчас
+                    </button>
+                </div>
+                <div class="dop__item">
+                    <div class="dop__item__img" style="background-image: url(img/dop-item-1.png);"></div>
+                    <div class="dop__item__title">Комплект полей для соревнования роботов</div>
+                    <button class="btn">
+                        <div class="btn__items"></div>
+                        Зказать сейчас
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =============================END dop =================================== -->
+<!-- ============================= assort =================================== -->
+<section class="assort">
+    <div class="container">
+        <div class="assort__content">
+            <h2 class="sec-title">Ассортимент конструкторов</h2>
+            <div class="assort__items">
+                <div class="assort__item">
+                    <div class="assort__item__fasteners"></div>
+                    <div class="assort__item__img" style="background-image: url(img/assort-item-1.jpg);"></div>
+                    <div class="assort__item__title">Lego duplo 2+</div>
+                </div>
+                <div class="assort__item">
+                    <div class="assort__item__fasteners"></div>
+                    <div class="assort__item__img" style="background-image: url(img/assort-item-1.jpg);"></div>
+                    <div class="assort__item__title">Развитие свободного творчества 3+</div>
+                </div>
+                <div class="assort__item">
+                    <div class="assort__item__fasteners"></div>
+                    <div class="assort__item__img" style="background-image: url(img/assort-item-1.jpg);"></div>
+                    <div class="assort__item__title">Раннее математическое развитие 2+</div>
+                </div>
+                <div class="assort__item">
+                    <div class="assort__item__fasteners"></div>
+                    <div class="assort__item__img" style="background-image: url(img/assort-item-1.jpg);"></div>
+                    <div class="assort__item__title">Эмоциональное развитие 3+</div>
+                </div>
+                <div class="assort__item">
+                    <div class="assort__item__fasteners"></div>
+                    <div class="assort__item__img" style="background-image: url(img/assort-item-1.jpg);"></div>
+                    <div class="assort__item__title">LEGO WeDo 2. 7+</div>
+                </div>
+                <div class="assort__item">
+                    <div class="assort__item__fasteners"></div>
+                    <div class="assort__item__img" style="background-image: url(img/assort-item-1.jpg);"></div>
+                    <div class="assort__item__title">Машины и механизмы 10+</div>
+                </div>
+                <div class="assort__item">
+                    <div class="assort__item__fasteners"></div>
+                    <div class="assort__item__img" style="background-image: url(img/assort-item-1.jpg);"></div>
+                    <div class="assort__item__title">LEGO MINDSTORMSEV3 10+</div>
+                </div>
+                <div class="assort__item">
+                    <div class="assort__item__fasteners"></div>
+                    <div class="assort__item__img" style="background-image: url(img/assort-item-1.jpg);"></div>
+                    <div class="assort__item__title">LEGO Education SPIKE Prime 10+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =============================END assort =================================== -->
+<!-- ============================= formblock =================================== -->
+<section class="formblock">
+    <div class="container">
+        <div class="formblock__content">
+            <div class="formblock__img" style="background-image: url(img/formblock.png);"></div>
+            <div class="formblock__text">
+                <h2 class="sec-title">Оставьте заявку на бесплатный звонок</h2>
+                <p class="sec-desc">Прямо сейчас и получите скидку или подарок в размере скидки</p>
+                <div class="formblock__img__mobile" style="background-image: url(img/formblock.png);"></div>
+                <form action="/" class="formblock__form">
+                    <div class="formblock__form__fasteners"></div>
+                    <div class="formblock__form__inputgroup">
+                        <input type="text" placeholder="Введите ваше имя">
+                    </div>
+                    <div class="formblock__form__inputgroup">
+                        <input type="text" placeholder="Введите ваш телефон">
+                    </div>
+                    <div class="formblock__form__checkboxgroup">
+                        <div class="checkbox">
+                            <label for="checkbox">
+                                <input id="checkbox" type="checkbox" checked>
+                                <div class="box">
+                                    <div class="box__circle"></div>
+                                </div>
+                            </label>
+                            <div class="checkbox__text">Отправляя заявку вы соглашаетесь с <a href="">политикой конфинденциальности</a></div>
+                        </div>
+                    </div>
+                    <button class="btn red">
+                        <div class="btn__items"></div>
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =============================END formblock =================================== -->
+<!-- ============================= videoblock =================================== -->
+<section class="videoblock">
+    <div class="container">
+        <div class="videoblock__content">
+            <h2 class="sec-title">Посмотрите как это работает</h2>
+            <div class="videoblock__items">
+                <div class="videoblock__item" style="background-image: url(img/videoblock-item-1.jpg);"></div>
+                <div class="videoblock__item" style="background-image: url(img/videoblock-item-1.jpg);"></div>
+                <div class="videoblock__item" style="background-image: url(img/videoblock-item-1.jpg);"></div>
+                <div class="videoblock__item" style="background-image: url(img/videoblock-item-1.jpg);"></div>
+                <div class="videoblock__item" style="background-image: url(img/videoblock-item-1.jpg);"></div>
+                <div class="videoblock__item" style="background-image: url(img/videoblock-item-1.jpg);"></div>
+                <div class="videoblock__item" style="background-image: url(img/videoblock-item-1.jpg);"></div>
+                <div class="videoblock__item" style="background-image: url(img/videoblock-item-1.jpg);"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =============================END videoblock =================================== -->
+<!-- ============================= ready =================================== -->
+<section class="ready" id="ready">
+    <div class="container">
+        <div class="ready__content">
+            <h2 class="sec-title">Мы подобрали несколько готовых решений для Вас</h2>
+            <div class="ready__items">
+                <div class="ready__item yellow">
+                    <div class="ready__item__fasteners"></div>
+                    <div class="ready__item__title">10+ Mindstorms EV-3</div>
+                    <ul class="ready__item__list">
+                        <li>- 45544 Образовательное решение LEGO MINDSTORMS Education EV3</li>
+                        <li>- 45560 Ресурсный набор LEGO MINDSTORMS Education EV3</li>
+                        <li>- 45517 Зарядное устройство переменного тока</li>
+                    </ul>
+                    <div class="ready__item__stock">При заказе сейчас 10% скидка</div>
+                    <div class="ready__item__prices">
+                        <div class="ready__item__price old">57 000 руб.</div>
+                        <div class="ready__item__price">46 750 руб.</div>
+                    </div>
+                    <button class="btn red">
+                        <div class="btn__items"></div>
+                        Заказать сейчас
+                    </button>
+                </div>
+                <div class="ready__item blue">
+                    <div class="ready__item__fasteners"></div>
+                    <div class="ready__item__title">10+ Mindstorms EV-3</div>
+                    <ul class="ready__item__list">
+                        <li>- 45544 Образовательное решение LEGO MINDSTORMS Education EV3</li>
+                        <li>- 45560 Ресурсный набор LEGO MINDSTORMS Education EV3</li>
+                        <li>- 45517 Зарядное устройство переменного тока</li>
+                    </ul>
+                    <div class="ready__item__stock">При заказе сейчас 10% скидка</div>
+                    <div class="ready__item__prices">
+                        <div class="ready__item__price old">57 000 руб.</div>
+                        <div class="ready__item__price">46 750 руб.</div>
+                    </div>
+                    <button class="btn yellow">
+                        <div class="btn__items"></div>
+                        Заказать сейчас
+                    </button>
+                </div>
+                <div class="ready__item red">
+                    <div class="ready__item__fasteners"></div>
+                    <div class="ready__item__title">10+ Mindstorms EV-3</div>
+                    <ul class="ready__item__list">
+                        <li>- 45544 Образовательное решение LEGO MINDSTORMS Education EV3</li>
+                        <li>- 45560 Ресурсный набор LEGO MINDSTORMS Education EV3</li>
+                        <li>- 45517 Зарядное устройство переменного тока</li>
+                    </ul>
+                    <div class="ready__item__stock">При заказе сейчас 10% скидка</div>
+                    <div class="ready__item__prices">
+                        <div class="ready__item__price old">57 000 руб.</div>
+                        <div class="ready__item__price">46 750 руб.</div>
+                    </div>
+                    <button class="btn yellow">
+                        <div class="btn__items"></div>
+                        Заказать сейчас
+                    </button>
+                </div>
+                <div class="ready__item green">
+                    <div class="ready__item__fasteners"></div>
+                    <div class="ready__item__title">10+ Mindstorms EV-3</div>
+                    <ul class="ready__item__list">
+                        <li>- 45544 Образовательное решение LEGO MINDSTORMS Education EV3</li>
+                        <li>- 45560 Ресурсный набор LEGO MINDSTORMS Education EV3</li>
+                        <li>- 45517 Зарядное устройство переменного тока</li>
+                    </ul>
+                    <div class="ready__item__stock">При заказе сейчас 10% скидка</div>
+                    <div class="ready__item__prices">
+                        <div class="ready__item__price old">57 000 руб.</div>
+                        <div class="ready__item__price">46 750 руб.</div>
+                    </div>
+                    <button class="btn">
+                        <div class="btn__items"></div>
+                        Заказать сейчас
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =============================END ready =================================== -->
+<!-- ============================= olimp =================================== -->
+<section class="olimp" style="background-image: url(img/olimp-bg.jpg);">
+    <div class="container">
+        <div class="olimp__content">
+            <div class="olimp__text">
+                <div class="olimp__title">А ты готов к всероссийской олимпиаде по робототехнике?</div>
+                <div class="olimp__desc">Все олимпиады по робототехнике в России проводятся на базе конструкторов Lego Education</div>
+                <div class="olimp__desc yellow">Выведи свое учреждение на новый уровень:</div>
+                <button class="btn red">
+                    <div class="btn__items"></div>
+                    Оставить заявку
+                </button>
+            </div>
+            <div class="olimp__img">
+                <img src="img/olimp.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =============================END olimp =================================== -->
+<!-- ============================= reviews =================================== -->
+<section class="reviews" id="reviews">
+    <div class="container">
+        <div class="reviews__content">
+            <h2 class="sec-title">Отзывы от клиентов</h2>
+            <div class="reviews__slider owl-carousel">
+                <div class="reviews__slide">
+                    <div class="reviews__slide__fasteners"></div>
+                    <div class="reviews__slide__user">
+                        <div class="reviews__slide__user__avatar" style="background-image: url(img/avatar.png);"></div>
+                        <div class="reviews__slide__user__text">
+                            <div class="reviews__slide__user__name">Фарид Мухамедович</div>
+                            <div class="reviews__slide__user__role">Директор</div>
+                        </div>
+                    </div>
+                    <div class="reviews__slide__content">
+                        <div class="reviews__slide__content__title">Школа №552</div>
+                        <p class="reviews__slide__content__desc">Взял внуку на день рождения. Внук постоянно в компьютере был. Дочь хотела тоже купить, но мы решили скинуться и взять комплект по лучше. Внук теперь не только в компьютере. Спасибо Вам огромное</p>
+                        <div class="reviews__slide__content__items">
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__slide">
+                    <div class="reviews__slide__fasteners"></div>
+                    <div class="reviews__slide__user">
+                        <div class="reviews__slide__user__avatar" style="background-image: url(img/avatar.png);"></div>
+                        <div class="reviews__slide__user__text">
+                            <div class="reviews__slide__user__name">Фарид Мухамедович</div>
+                            <div class="reviews__slide__user__role">Директор</div>
+                        </div>
+                    </div>
+                    <div class="reviews__slide__content">
+                        <div class="reviews__slide__content__title">Школа №552</div>
+                        <p class="reviews__slide__content__desc">Взял внуку на день рождения. Внук постоянно в компьютере был. Дочь хотела тоже купить, но мы решили скинуться и взять комплект по лучше. Внук теперь не только в компьютере. Спасибо Вам огромное</p>
+                        <div class="reviews__slide__content__items">
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__slide">
+                    <div class="reviews__slide__fasteners"></div>
+                    <div class="reviews__slide__user">
+                        <div class="reviews__slide__user__avatar" style="background-image: url(img/avatar.png);"></div>
+                        <div class="reviews__slide__user__text">
+                            <div class="reviews__slide__user__name">Фарид Мухамедович</div>
+                            <div class="reviews__slide__user__role">Директор</div>
+                        </div>
+                    </div>
+                    <div class="reviews__slide__content">
+                        <div class="reviews__slide__content__title">Школа №552</div>
+                        <p class="reviews__slide__content__desc">Взял внуку на день рождения. Внук постоянно в компьютере был. Дочь хотела тоже купить, но мы решили скинуться и взять комплект по лучше. Внук теперь не только в компьютере. Спасибо Вам огромное</p>
+                        <div class="reviews__slide__content__items">
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                            <div class="reviews__slide__content__item" style="background-image: url(img/reviews-item.jpg);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn">
+                <div class="btn__items"></div>
+                Оставьте свой отзыв
+            </button>
+        </div>
+    </div>
+</section>
+<!-- =============================END reviews =================================== -->
+<!-- ============================= about-company =================================== -->
+<section class="about-company">
+    <div class="container">
+        <div class="about-company__content">
+            <div class="about-company__content__img" style="background-image: url(img/about-company.png);"></div>
+            <div class="about-company__content__img__mobile" style="background-image: url(img/about-company.png);"></div>
+            <img src="img/about-company.png" alt="" class="about-company__content__img__mobile">
+            <div class="about-company__text">
+                <div class="about-company__text__fasteners">
+                    <div class="about-company__text__fastener"></div>
+                </div>
+                <div class="about-company__text__title">О компании</div>
+                <div class="about-company__text__desc-blue">Мы являемся официальными дилерами Lego Education</div>
+                <div class="about-company__text__desc">
+                    Наша компания более 5 лет занимается поставками робототехнического оборудования для образовательных учреждений. <br>
+                    Наша цель – это повысить уровень знаний детей в  наиболее востребованной сфере  – программировании и конструировании. <br>
+                    Наша миссия – это помочь подготовить новое поколение инженеров и программистов. По нашему мнению  эту задачу надо решать уже на самых ранних этапах образования. <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =============================END about-company =================================== -->
+<!-- ============================= contacts =================================== -->
+<section class="contacts" id="contacts">
+    <div class="container">
+        <div class="contacts__content">
+            <div class="contacts__text">
+                <h2 class="sec-title">Контакты</h2>
+                <div class="contacts__items">
+                    <div class="contacts__item">
+                        <div class="contacts__item__label">Телефон:</div>
+                        <div class="contacts__item__val">+7 (843) 247-04-97</div>
+                    </div>
+                    <div class="contacts__item">
+                        <div class="contacts__item__label">Адрес:</div>
+                        <div class="contacts__item__val">г. Казань, ул. Гладилова 27</div>
+                    </div>
+                    <div class="contacts__item">
+                        <div class="contacts__item__label">Email:</div>
+                        <div class="contacts__item__val">info@eslite.ru</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts__map" id="contacts__map"></div>
+        </div>
+    </div>
+</section>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script>
+    //Яндекс Карта
+    ymaps.ready(init);
+    var myMapAll;
+
+    function init() {
+        myMapAll = new ymaps.Map("contacts__map", {
+            center: [55.806226, 49.070544],
+            zoom: 15,
+        });
+        var myPlacemark_1 = new ymaps.Placemark([55.806226, 49.070544], {
+            balloonContentHeader: "Название объекта",
+            balloonContentBody: "Описание объекта",
+            balloonContentFooter: "",
+            hintContent: "Кликните для более подробной информации",
+        });
+        myMapAll.geoObjects.add(myPlacemark_1);
+    }
+    //END Яндекс Карта
+</script>
+<!-- =============================END contacts =================================== -->
+<!-- ============================= footer =================================== -->
+<section class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__content">
+                <div class="footer__logo">
+                    <a href="" class="footer__logo__img">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="footer__logo__desc">Официальный дилер <br>
+                        <span class="blue">Lego Education</span> в Казани</div>
+                </div>
+                <ul class="footer__nav">
+                    <li><a data-link="scroll" href="#top">Товары</a></li>
+					<li><a data-link="scroll" href="#ready">Решения</a></li>
+					<li><a data-link="scroll" href="#reviews">Отзывы</a></li>
+					<li><a data-link="scroll" href="#contacts">Контакты</a></li>
+                </ul>
+                <div class="footer__contacts">
+                    <a href="mailto:info@eslite.ru" class="footer__contacts__email">info@eslite.ru</a>
+                    <a href="tel:+7 (843) 247-04-97" class="footer__contacts__phone">+7 (843) 247-04-97</a>
+                    <a href="" class="footer__contacts__phonebtn">
+                        <img src="img/phone.svg" alt="">
+                    </a>
+                </div>
+                <a href="" class="footer__phonebtn__mobile"></a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <a href="/" class="footer__politics">Политика конфинденциальности</a>
+        </div>
+    </div>
+</section>
+<!-- =============================END footer =================================== -->
+
+{% endblock %}

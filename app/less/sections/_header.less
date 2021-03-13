@@ -1,0 +1,123 @@
+.header {
+    background-color: #fff;
+    padding: 28px 0;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+.header__logo__img {
+    line-height: 0;
+    img {
+        max-height: 30px;
+        width: auto;
+    }
+}
+.header__logo__desc {
+    font-size: 12px;
+    margin-left: 37px;
+    font-weight: normal;
+    * {
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .blue {
+        color: #1786C9;
+        font-weight: 600;
+    }
+}
+.header__nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    a {
+        padding: 23px;
+        color: #383838;
+        font-size: 14px;
+    }
+}
+.header__contacts {
+    display: flex;
+    align-items: center;
+}
+.header__contacts__email {
+    font-weight: 600;
+    font-size: 18px;
+}
+.header__contacts__phone {
+    font-weight: bold;
+    font-size: 22px;
+    color: #383838;
+    margin-left: 45px;
+}
+.header__contacts__phonebtn {
+    background-color: #1588CB;
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 27px;
+}
+.header__hamburger {
+    width: 32px;
+    height: 32px;
+    background-color: #208DCE;
+    border-radius: 100%;
+    background-image: url(../img/hamburger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: none;
+}
+
+.header__phonebtn__mobile {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-color: #F8F8F8;
+    background-image: url(../img/phone-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .header__nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        padding: 15px 0;
+    }
+    .header__hamburger {
+        display: block;
+    }
+    .header__phonebtn__mobile {
+        display: block;
+    }
+    .header__logo__desc {
+        display: none;
+    }
+    .header__contacts {
+        display: none;
+    }
+    .header__logo__img {
+        img {
+            max-height: 22px;
+        }
+    }
+}

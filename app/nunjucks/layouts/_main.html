@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>{{ title }}</title>
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<section class="header">
+		<div class="container">
+			<div class="header__content">
+				<div class="header__hamburger"></div>
+				<div class="header__logo">
+					<a href="" class="header__logo__img">
+						<img src="img/logo.png" alt="">
+					</a>
+					<div class="header__logo__desc">Официальный дилер <br>
+						<span class="blue">Lego Education</span> в Казани</div>
+				</div>
+				<ul class="header__nav">
+					<li><a data-link="scroll" href="#top">Товары</a></li>
+					<li><a data-link="scroll" href="#ready">Решения</a></li>
+					<li><a data-link="scroll" href="#reviews">Отзывы</a></li>
+					<li><a data-link="scroll" href="#contacts">Контакты</a></li>
+				</ul>
+				<div class="header__contacts">
+					<a href="mailto:info@eslite.ru" class="header__contacts__email">info@eslite.ru</a>
+					<a href="tel:+7 (843) 247-04-97" class="header__contacts__phone">+7 (843) 247-04-97</a>
+					<a href="" class="header__contacts__phonebtn">
+						<img src="img/phone.svg" alt="">
+					</a>
+				</div>
+				<a href="" class="header__phonebtn__mobile"></a>
+			</div>
+		</div>
+	</section>
+	{% block content %}
+		
+	{% endblock %}
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/scroll.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

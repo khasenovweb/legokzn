@@ -1,0 +1,78 @@
+.olimp {
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+    }
+}
+.olimp__content {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    position: relative;
+    * {
+        color: white;
+    }
+}
+.olimp__text {
+    
+    .btn {
+        margin-top: 21px;
+    }
+}
+.olimp__title {
+    font-weight: bold;
+    font-size: 30px;
+}
+.olimp__desc {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 16px;
+    &.yellow {
+        font-weight: 600;
+        color: #E1BE0B;
+    }
+}
+.olimp__img {
+    align-self: center;
+    justify-self: center;
+    max-width: 70%;
+    img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .olimp {
+        padding: 40px 0;
+    }
+    .olimp__content {
+        grid-template-columns: 1fr;
+        grid-gap: 17px;
+    }
+    .olimp__img {
+        order: 0;
+    }
+    .olimp__text {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .olimp__title {
+        text-align: center;
+        font-size: 24px;
+    }
+    .olimp__desc {
+        text-align: center;
+        font-size: 14px;
+    }
+}
