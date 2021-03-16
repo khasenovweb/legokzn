@@ -12,11 +12,45 @@ $(document).ready(function(){
             }
         }
     });
+
+    $('.modal__content__product__slider').owlCarousel({
+        items: 1,
+        nav: true,
+        navText: ["<img src=\"img/modal-arrow-left.svg\">","<img src=\"img/modal-arrow-right.svg\" >"],
+    });
+
     $("[data-link='scroll']").mPageScroll2id({
         offset: 90,
         scrollSpeed: 900,
         keepHighlightUntilNext: true,
     });
+
+    //Модальное окно
+    // $('.modal__wrapper').click(function(){
+    //     var thisval = $(this);
+    //     if ($(event.target).closest(".modal").length) return;
+    //     $(this).removeClass('active');
+    //     setTimeout(function(){
+    //         thisval.hide();
+    //     },300);
+    // });
+    $('[data-modal-close]').click(function(){
+        var id = $(this).attr('data-modal-close');
+        $('[data-modal="'+id+'"]').removeClass('active');
+        setTimeout(function(){
+            $('[data-modal="'+id+'"]').hide();
+        },300);
+    });
+    $('[data-modal-show]').click(function(){
+        var id = $(this).attr('data-modal-show');
+        $('[data-modal="'+id+'"]').css('display', 'flex');
+        btn_items();
+        setTimeout(function(){
+            $('[data-modal="'+id+'"]').addClass('active');
+        },1);
+        
+    });
+    //END Модальное окно
     //Определяем колличество крепежей на кнопках
     function btn_items(){
         $('.btn').each(function(i, el){

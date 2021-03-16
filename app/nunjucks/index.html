@@ -122,7 +122,7 @@
             </div>
             <div class="top__items">
                 {% for i in range(0, 10) -%}
-                    <div class="top__item">
+                    <div class="top__item" data-modal-show="3">
                         <div class="top__item__img" style="background-image: url(img/top-item-1.png);"></div>
                         <div class="top__item__title">45400 Набор LEGO Education BricQ Motion Prime</div>
                     </div>
@@ -382,7 +382,7 @@
                 <div class="olimp__title">А ты готов к всероссийской олимпиаде по робототехнике?</div>
                 <div class="olimp__desc">Все олимпиады по робототехнике в России проводятся на базе конструкторов Lego Education</div>
                 <div class="olimp__desc yellow">Выведи свое учреждение на новый уровень:</div>
-                <button class="btn red">
+                <button class="btn red" data-modal-show="1">
                     <div class="btn__items"></div>
                     Оставить заявку
                 </button>
@@ -582,5 +582,123 @@
     </div>
 </section>
 <!-- =============================END footer =================================== -->
+<!-- ============================= modal =================================== -->
+<section class="modal__wrapper" data-modal="1">
+    <div class="modal">
+        <div class="modal__close" data-modal-close="1"></div>
+        <div class="modal__content">
+            <div class="modal__title">Свяжемся и уточним все детали</div>
+            <div class="modal__desc">Оставьте свои контакты, мы ответим в ближайшее время</div>
+            <form action="/" class="modal__form">
+                <div class="modal__form__input">
+                    <input type="text" placeholder="Введите ваше имя">
+                </div>
+                <div class="modal__form__input">
+                    <input type="text" placeholder="Введите ваш телефон *">
+                </div>
+                <div class="checkbox">
+                    <label for="checkbox2">
+                        <input id="checkbox2" type="checkbox" checked>
+                        <div class="box">
+                            <div class="box__circle"></div>
+                        </div>
+                    </label>
+                    <div class="checkbox__text">Отправляя заявку вы соглашаетесь с <a href="">политикой конфинденциальности</a></div>
+                </div>
+                <button class="btn">
+                    <div class="btn__items"></div>
+                    Оставить заявку
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- =============================END modal =================================== -->
+<!-- ============================= modal =================================== -->
+<section class="modal__wrapper" data-modal="2">
+    <div class="modal">
+        <div class="modal__close" data-modal-close="2" data-modal-show="3"></div>
+        <div class="modal__content">
+            <div class="modal__title">Свяжемся и уточним все детали</div>
+            <div class="modal__desc">Оставьте свои контакты, мы ответим в ближайшее время</div>
+            <form action="/" class="modal__form">
+                <div class="modal__form__input">
+                    <input type="text" placeholder="Введите ваше имя">
+                </div>
+                <div class="modal__form__input">
+                    <input type="text" placeholder="Введите ваш телефон *">
+                </div>
+                <div class="checkbox">
+                    <label for="checkbox2">
+                        <input id="checkbox2" type="checkbox" checked>
+                        <div class="box">
+                            <div class="box__circle"></div>
+                        </div>
+                    </label>
+                    <div class="checkbox__text">Отправляя заявку вы соглашаетесь с <a href="">политикой конфинденциальности</a></div>
+                </div>
+                <button class="btn">
+                    <div class="btn__items"></div>
+                    Оставить заявку
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- =============================END modal =================================== -->
+<!-- ============================= modal product =================================== -->
+<section class="modal__wrapper" data-modal="3">
+    <div class="modal product">
+        <div class="modal__close" data-modal-close="3"></div>
+        <div class="modal__content__product">
+            <div class="modal__content__product__slider owl-carousel">
+                <div data-fancybox="1" href="img/product.png" class="modal__content__product__slide" style="background-image: url(img/product.png);"></div>
+                <div data-fancybox="1" href="img/product.png" class="modal__content__product__slide" style="background-image: url(img/product.png);"></div>
+                <div data-fancybox="1" href="img/product.png" class="modal__content__product__slide" style="background-image: url(img/product.png);"></div>
+            </div>
+            <div class="modal__content__product__text">
+                <div class="modal__content__product__title">45400 Набор LEGO Education BricQ Motion Prime</div>
+                <div class="modal__content__product__oldprice">11 200 ₽</div>
+                <div class="modal__content__product__priceactualblock">
+                    <div class="modal__content__product__priceactual">11 200 ₽</div>
+                    <div class="modal__content__product__percent">-10%</div>
+                </div>
+                <button class="btn" data-modal-show="2" data-modal-close="3">
+                    <div class="btn__items"></div>
+                    Оставить заявку
+                </button>
+                <div class="modal__content__product__info">
+                    <div class="modal__content__product__info__title">Информация о товаре:</div>
+                    <div class="modal__content__product__info__desc">
+                        Набор LEGO® BricQ Motion погружает учащихся 5–7 классов в изучение физических концепций в контексте
+                    </div>
+                    <div class="modal__content__product__info__all" data-modal-close="3" data-modal-show="4">Смотреть всю информацию</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =============================END modal product =================================== -->
+<!-- ============================= modal product =================================== -->
+<section class="modal__wrapper" data-modal="4">
+    <div class="modal product">
+        <div class="modal__close" data-modal-close="4" data-modal-show="3"></div>
+        <div class="modal__content__productinfo">
+            <div class="modal__content__productinfo__title">Информация о товаре</div>
+            <div class="modal__content__productinfo__tabs">
+                <div class="modal__content__productinfo__tab">Описание</div>
+            </div>
+            <div class="modal__content__productinfo__text">
+                <p>Набор LEGO® BricQ Motion погружает учащихся 5–7 классов в изучение физических концепций в контексте спорта. Решение BricQ Motion помогает сформировать у учащихся более глубокое понимание таких концепций, как силы, движение и взаимодействие предметов, предлагая простые практические задания, для выполнения которых не нужны сложные цифровые технологии.</p>
+                <br>
+                <p>— Вам будет проще организовать работу в классе благодаря наличию в наборе запасных элементов и печатным инструкциям по сборке.
+                    — С помощью новых элементов с нанесенными на них цифрами дети легко смогут собирать данные о переменных, углах, высотах и длинах, которые помогут им в аналитической работе и достижении целей обучения.</p>
+                <br>
+                <p>Остались вопросы? <span class="blue">Оставьте свои контакты</span>, и мы перезвоним вам.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =============================END modal product =================================== -->
 
 {% endblock %}
