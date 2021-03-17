@@ -54,11 +54,14 @@
 }
 .about__item {
     padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .about__item__img {
     background-repeat: no-repeat;
     background-position: center;
-    // background-size: contain;
+    background-size: contain;
     width: 100%;
     padding-bottom: 50%;
 }
@@ -73,6 +76,9 @@
 @media screen and (max-width: 1000px) {
     .about__item {
         padding: 0;
+    }
+    .about__item__img {
+        width: 90%;
     }
 }
 
@@ -103,5 +109,6 @@
     }
     .about__item__img {
         background-size: contain;
+        width: 80%;
     }
 }

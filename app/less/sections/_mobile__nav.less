@@ -1,0 +1,56 @@
+.mobile__nav {
+    position: fixed;
+    top: 62px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 0 15px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    z-index: 2;
+    border-top: 1px solid #F2F8FF;
+    transform: translateX(-100%);
+    transition: 0.3s;
+    &.active {
+        transform: translateX(0);
+    }
+}
+.mobile__nav__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mobile__nav__title {
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+    .blue {
+        font-weight: 600;
+        color: #1786C9;
+        font-size: 12px;
+    }
+}
+.mobile__nav__links {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(max-content, 0));
+    grid-gap: 17px;
+    margin-top: 20px;
+    text-align: center;
+    a {
+        text-align: center;
+        color: #383838;
+    }
+    
+}
+.mobile__nav__mail {
+    margin-top: 28px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.mobile__nav__phone {
+    font-weight: bold;
+    font-size: 22px;
+    color: #383838;
+    margin-top: 20px;
+}

@@ -23,6 +23,10 @@ $(document).ready(function(){
         offset: 90,
         scrollSpeed: 900,
         keepHighlightUntilNext: true,
+        onStart:function(){
+            $('[data-mobile-nav]').removeClass('active');
+            $('[data-mobile-nav-show]').removeClass('active');
+        }
     });
 
     //Модальное окно
@@ -34,6 +38,15 @@ $(document).ready(function(){
     //         thisval.hide();
     //     },300);
     // });
+
+    //Мобильное меню
+    $('[data-mobile-nav-show]').click(function(){
+        var id = $(this).attr('data-mobile-nav-show');
+        $('[data-mobile-nav="'+id+'"]').toggleClass('active');
+        $(this).toggleClass('active');
+    });
+    //END Мобильное меню
+
     $('[data-modal-close]').click(function(){
         var id = $(this).attr('data-modal-close');
         $('[data-modal="'+id+'"]').removeClass('active');
