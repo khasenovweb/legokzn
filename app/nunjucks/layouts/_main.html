@@ -45,6 +45,30 @@
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/scroll.js"></script>
+	<script src="js/validate.js"></script>
+	<script src="js/mask.js"></script>
 	<script src="js/main.js?v2"></script>
+	<script>
+		$.validator.addMethod(
+			"phone",
+			function (value) {
+				return value.replace(/\D+/g, "").length >= 11;
+			},
+			"Введите номер телефона полностью"
+		);
+
+		$("form[data-validate='filedownload']").each(function (i, el) {
+			$(el).validate({
+				rules: {
+				phoneinput: "phone",
+				},
+				submitHandler: function(form) {
+				console.log('Отпрвлено');
+				}
+			});
+		});
+
+		$('input[name="phoneinput"]').mask('+7 (999) 999-9999');
+	</script>
 </body>
 </html>

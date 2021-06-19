@@ -18,16 +18,22 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
 }
-.top__item {
+.top__item__wrapper {
     cursor: pointer;
     &:nth-child(10n-9) {
         grid-column: span 2;
         grid-row: span 2;
         display: flex;
         flex-direction: column;
-        .top__item__img__wrapper {
+        .top__item {
             padding-bottom: initial;
             flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            .top__item__img__wrapper {
+                padding-bottom: initial;
+                flex-grow: 1;
+            }
         }
     }
     &:nth-child(10n-2) {
@@ -35,12 +41,42 @@
         grid-row: span 2;
         display: flex;
         flex-direction: column;
-        .top__item__img__wrapper {
+        .top__item {
             padding-bottom: initial;
             flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            .top__item__img__wrapper {
+                padding-bottom: initial;
+                flex-grow: 1;
+            }
         }
     }
 }
+// .top__item {
+//     cursor: pointer;
+//     &:nth-child(10n-9) {
+//         grid-column: span 2;
+//         grid-row: span 2;
+//         display: flex;
+//         flex-direction: column;
+//         .top__item__img__wrapper {
+//             padding-bottom: initial;
+//             flex-grow: 1;
+//         }
+//     }
+//     &:nth-child(10n-2) {
+//         grid-column: span 2;
+//         grid-row: span 2;
+//         display: flex;
+//         flex-direction: column;
+//         .top__item__img__wrapper {
+//             padding-bottom: initial;
+//             flex-grow: 1;
+//         }
+//     }
+// }
+
 .top__item__img__wrapper {
     border: 2px solid #E6EBF2;
     width: 100%;
@@ -52,7 +88,6 @@
 .top__item__img {
     width: 100%;
     padding-bottom: 100%;
-    // border: 2px solid #E6EBF2;
     
     background-repeat: no-repeat;
     background-position: center;
@@ -82,11 +117,10 @@
         grid-gap: 10px;
         grid-row-gap: 20px;
     }
-    .top__item {
+    .top__item__wrapper {
         &:nth-child(10n-9) {
             grid-column: span 1;
             grid-row: span 1;
-            display: initial;
             .top__item__img__wrapper {
                 padding-bottom: 100%;
             }

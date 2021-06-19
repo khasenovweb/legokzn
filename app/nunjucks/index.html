@@ -122,12 +122,14 @@
             </div>
             <div class="top__items">
                 {% for i in range(0, 10) -%}
+                <div class="top__item__wrapper">
                     <div class="top__item" data-modal-show="3">
                         <div class="top__item__img__wrapper">
                             <div class="top__item__img" style="background-image: url(img/top-item-1.png);"></div>
                         </div>
                         <div class="top__item__title">45400 Набор LEGO Education BricQ Motion Prime</div>
                     </div>
+                </div>
                 {%- endfor %}
             </div>
             <div class="top__content__btnwrapper">
@@ -245,13 +247,13 @@
                 <h2 class="sec-title">Оставьте заявку на бесплатный звонок</h2>
                 <p class="sec-desc">Прямо сейчас и получите скидку или подарок в размере скидки</p>
                 <div class="formblock__img__mobile" style="background-image: url(img/formblock.png);"></div>
-                <form action="/" class="formblock__form">
+                <form action="/" class="formblock__form" data-validate='filedownload'>
                     <div class="formblock__form__fasteners"></div>
                     <div class="formblock__form__inputgroup">
                         <input type="text" placeholder="Введите ваше имя">
                     </div>
                     <div class="formblock__form__inputgroup">
-                        <input type="text" placeholder="Введите ваш телефон">
+                        <input type="text" placeholder="Введите ваш телефон" name="phoneinput">
                     </div>
                     <div class="formblock__form__checkboxgroup">
                         <div class="checkbox">
@@ -591,12 +593,12 @@
         <div class="modal__content">
             <div class="modal__title">Свяжемся и уточним все детали</div>
             <div class="modal__desc">Оставьте свои контакты, мы ответим в ближайшее время</div>
-            <form action="/" class="modal__form">
+            <form action="/" class="modal__form" data-validate='filedownload'>
                 <div class="modal__form__input">
                     <input type="text" placeholder="Введите ваше имя">
                 </div>
                 <div class="modal__form__input">
-                    <input type="text" placeholder="Введите ваш телефон *">
+                    <input type="text" placeholder="Введите ваш телефон *" name="phoneinput">
                 </div>
                 <div class="checkbox">
                     <label for="checkbox2">

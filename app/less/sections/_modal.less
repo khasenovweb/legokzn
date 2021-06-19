@@ -27,9 +27,14 @@
     position: relative;
     transform: translateY(-30px);
     transition: 0.3s;
+    
     &.product {
         width: 844px;
     }
+}
+.modal__content__product {
+    border-radius: 10px;
+    overflow-y: hidden;
 }
 .modal__img {
     margin: 0 auto;
@@ -47,6 +52,7 @@
     width: 100%;
     min-width: 100%;
     cursor: zoom-in;
+
     button.owl-prev {
         position: absolute;
         left: 0;
@@ -72,6 +78,9 @@
         &:hover {
             opacity: 1;
         }
+    }
+    .owl-dots {
+        display: none;
     }
 }
 .modal__content__product__slide {
@@ -233,6 +242,9 @@
 }
 
 @media screen and (max-width: 700px) {
+    .modal__content__product {
+        border-radius: 0;
+    }
     .modal__content__product__text {
         padding-top: 40px;
     }

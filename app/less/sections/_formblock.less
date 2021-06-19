@@ -36,6 +36,7 @@
     flex-wrap: wrap;
     padding-top: 26px;
     position: relative;
+    align-items: flex-start;
     .btn {
         order: 0;
         margin-bottom: 15px;
@@ -64,8 +65,13 @@
     flex-grow: 1;
     margin-right: 20px;
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
     input {
         width: 100%;
+    }
+    label.error {
+        margin-top: 5px;
     }
 }
 .box {
